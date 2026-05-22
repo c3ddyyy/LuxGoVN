@@ -19,36 +19,18 @@ export default function Navbar() {
 
         {/* Desktop Nav Links */}
         <nav className="hidden md:flex items-center space-x-10 text-xs tracking-widest uppercase font-semibold text-zinc-700">
-          <a
-            href="#about"
-            className="hover:text-black transition-colors duration-300"
-          >
-            Chúng Tôi
-          </a>
-          <a
-            href="#fleet"
+          <Link
+            href="xethue"
             className="hover:text-black transition-colors duration-300"
           >
             Dòng Xe Cho Thuê
-          </a>
-          <a
-            href="#wedding-cars"
-            className="hover:text-black transition-colors duration-300"
-          >
-            Xe Hoa & Hoa Tươi
-          </a>
-          <a
-            href="#gallery"
+          </Link>
+          <Link
+            href="thuvien"
             className="hover:text-black transition-colors duration-300"
           >
             Thư Viện Ảnh
-          </a>
-          <a
-            href="#contact"
-            className="hover:text-black transition-colors duration-300"
-          >
-            Liên Hệ
-          </a>
+          </Link>
         </nav>
 
         {/* Quick Access CTAs */}
@@ -101,41 +83,20 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-zinc-200 px-6 py-6 transition-all duration-300 shadow-lg">
           <nav className="flex flex-col space-y-4 text-sm tracking-widest uppercase font-bold text-zinc-800">
-            <a
-              href="#about"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-black py-2"
-            >
-              Chúng Tôi
-            </a>
-            <a
-              href="#fleet"
+            <Link
+              href="xethue"
               onClick={() => setIsMobileMenuOpen(false)}
               className="hover:text-black py-2"
             >
               Dòng Xe Cho Thuê
-            </a>
-            <a
-              href="#wedding-cars"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-black py-2"
-            >
-              Xe Hoa & Hoa Tươi
-            </a>
-            <a
-              href="#gallery"
+            </Link>
+            <Link
+              href="thuvien"
               onClick={() => setIsMobileMenuOpen(false)}
               className="hover:text-black py-2"
             >
               Thư Viện Ảnh
-            </a>
-            <a
-              href="#contact"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="hover:text-black py-2"
-            >
-              Liên Hệ
-            </a>
+            </Link>
             <div className="pt-4 border-t border-zinc-100 flex flex-col gap-3">
               <a
                 href="https://zalo.me"
