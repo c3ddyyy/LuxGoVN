@@ -27,19 +27,6 @@ interface GalleryItem {
 // --- Dữ liệu Mock Data ---
 const FLEET_DATA: FleetItem[] = [
   {
-    id: 1,
-    title: "Xe Điện VinFast",
-    submodels: "VF8 / VF9 / VF5",
-    image: "https://images.unsplash.com/photo-1678911820864-e2c567c655d7?auto=format&fit=crop&q=80&w=600",
-    years: "2023 - 2025",
-    seats: "5 - 7 Chỗ",
-    engine: "Thuần Điện",
-    transmission: "Tự Động",
-    description: "Êm ái, hiện đại, không mùi xăng xe. Thích hợp đi phố hoặc công tác đô thị lịch sự.",
-    typeText: "Tự lái & Có tài",
-    price: "700k/ngày",
-  },
-  {
     id: 2,
     title: "Mercedes-Benz",
     submodels: "C-Class / E-Class",
