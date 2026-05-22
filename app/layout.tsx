@@ -13,8 +13,28 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "LuxGo VN",
-  description: "Luxury Car Rental & Wedding Cars",
+ title: "LuxGo VN | Luxury Car Rental & Wedding Cars",
+
+  description:
+    "Dịch vụ thuê xe sang, xe cưới và xe tự lái cao cấp tại Việt Nam.",
+
+  openGraph: {
+    title: "LuxGo VN",
+    description:
+      "Dịch vụ thuê xe sang và xe cưới cao cấp tại Việt Nam.",
+    url: "https://lux-go-vn.vercel.app/",
+    siteName: "LuxGo VN",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "LuxGo VN",
+      },
+    ],
+    locale: "vi_VN",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
